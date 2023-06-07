@@ -15,4 +15,4 @@ COPY requirements.txt requirements.txt
 # inside the container using the pip package manager.
 RUN pip install -r requirements.txt
 
-CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
+CMD uvicorn main:app --host 0.0.0.0 --port $PORT
