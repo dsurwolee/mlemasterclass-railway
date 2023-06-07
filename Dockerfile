@@ -15,4 +15,5 @@ COPY requirements.txt requirements.txt
 # inside the container using the pip package manager.
 RUN pip install -r requirements.txt
 
+# Jump start the application server running on a port specified by the Railway service
 CMD uvicorn main:app --host 0.0.0.0 --port $PORT
