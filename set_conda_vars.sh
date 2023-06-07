@@ -26,6 +26,7 @@ export REPOSITORY=prediction-model-container
 export IMAGE=model-api
 # Vertex API Model Name
 export MODEL_DISPLAY_NAME=deployment-container-api
+export ENDPOINT_DISPLAY_NAME=container-model-endpoint
 # API Routes
 export API_HTTP_PORT=8080
 export API_HEALTH_ROUTE=/health
@@ -43,6 +44,7 @@ unset MODEL_ARTIFACT_DIR
 unset REPOSITORY
 unset IMAGE
 unset MODEL_DISPLAY_NAME
+unset ENDPOINT_DISPLAY_NAME
 unset API_HTTP_PORT
 unset API_HEALTH_ROUTE
 unset API_PREDICT_ROUTE'
